@@ -6,4 +6,4 @@ ENV CATALINA_BASE /var/lib/tomcat7
 RUN ln -s /usr/share/tomcat7/bin/catalina.sh /usr/local/bin/catalina.sh
 ADD trucks/target/trucks.war  /var/lib/tomcat7/webapps/
 EXPOSE 8080
-CMD "catalina.sh run"
+CMD "/usr/share/tomcat7/bin/catalina.sh run"
