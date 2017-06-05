@@ -2,7 +2,7 @@ node{
 stage 'build'
 
 
-  sh 'echo "${env.branch}"'
+  sh 'echo "${env.branchName}"'
 
 
 
