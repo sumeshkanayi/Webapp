@@ -1,10 +1,10 @@
 node{
-stage 'build'{
+stage 'build'
 
 
+  sh 'echo "${branch}'
 
 
-}
 
 
 }
