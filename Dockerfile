@@ -9,3 +9,6 @@ RUN chmod 777 /docker-entrypoint.sh
 ADD trucks/target/trucks.war  /var/lib/tomcat7/webapps/
 EXPOSE 8080
 ENTRYPOINT ["/docker-entrypoint.sh"] 
+
+
+
