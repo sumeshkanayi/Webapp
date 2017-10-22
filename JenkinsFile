@@ -10,6 +10,7 @@ pipeline{
       steps{
         
        sh(script:'echo "Hello world"')
+       sh(script:'echo "Hello world morning"')
     
         
       }
