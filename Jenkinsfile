@@ -1,5 +1,10 @@
 pipeline{
   
+  agent{
+   label "master" 
+    
+  }
+  
   stages{
     stage("Run pre build steps"){
       steps{
