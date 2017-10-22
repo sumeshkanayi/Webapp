@@ -9,7 +9,7 @@ pipeline{
     stage("Run pre build steps"){
       steps{
         
-       sh(script:'ls')
+       sh(script:'echo "Hello world"')
     
         
       }
