@@ -155,11 +155,12 @@ under the License.
      | this mirror serves has an ID that matches the mirrorOf element of this mirror. IDs are used
      | for inheritance and direct lookup purposes, and must be unique across the set of mirrors.
      |
+-->
     <mirror>
-      <id>mirrorId</id>
-      <mirrorOf>repositoryId</mirrorOf>
+      <id>central</id>
+      <mirrorOf>*</mirrorOf>
       <name>Human Readable Name for this Mirror.</name>
-      <url>http://my.repository.com/repo/path</url>
+      <url>https://devops_sumesh.jfrog.io/devops_sumesh/proxy/url>
     </mirror>
      -->
   </mirrors>
