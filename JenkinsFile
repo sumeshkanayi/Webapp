@@ -6,11 +6,11 @@ pipeline{
   }
   
   stages{
-    stage("Run pre build steps"){
+    stage("maven build and deploy"){
       steps{
         
-       sh(script:'echo "Hello world"')
-       sh(script:'echo "Hello world morning"')
+       sh(script:'mvn clean deploy -s settings.xml -f trucks/pom.xml')
+   
     
         
       }
