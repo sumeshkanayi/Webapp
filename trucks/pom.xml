@@ -26,8 +26,8 @@
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>c5731fe0bfde-snapshots</name>
-        <url>http://artifactory:8081/artifactory/prod</url>
+        <name>snapshot</name>
+        <url>https://devops_sumesh.jfrog.io/devops_sumesh/snapshot</url>
     </snapshotRepository>
 </distributionManagement>
   
