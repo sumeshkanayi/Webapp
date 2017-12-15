@@ -8,6 +8,7 @@ COPY docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod 777 /docker-entrypoint.sh
 #ADD trucks/target/trucks.war  /var/lib/tomcat7/webapps/
 RUN wget https://devops_sumesh.jfrog.io/devops_sumesh/list/snapshot/com/companyname/automobile/trucks/1.0-SNAPSHOT/trucks-1.0-20171215.170559-3.war
+RUN ls
 COPY trucks-1.0-20171215.170559-3.war /var/lib/tomcat7/webapps/trucks.war
 EXPOSE 8080
 ENTRYPOINT ["/docker-entrypoint.sh"] 
