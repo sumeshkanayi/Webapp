@@ -162,7 +162,7 @@ under the License.
       <name>Human Readable Name for this Mirror.</name>
       <url>https://devops_sumesh.jfrog.io/devops_sumesh/proxy/url>
     </mirror>
-     -->
+    
   </mirrors>
 
   <!-- profiles
