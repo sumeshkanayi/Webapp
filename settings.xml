@@ -157,7 +157,7 @@ under the License.
      |
 -->
     <mirror>
-      <id>central</id>
+      <id>deploymentRepo</id>
       <mirrorOf>*</mirrorOf>
       <name>Human Readable Name for this Mirror.</name>
       <url>https://devops_sumesh.jfrog.io/devops_sumesh/proxy/</url>
