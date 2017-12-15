@@ -9,7 +9,7 @@ pipeline{
     stage("maven build and deploy"){
       steps{
         
-       sh(script:'mvn clean deploy --settings settings.xml -f trucks/pom.xml')
+       sh(script:'mvn deploy --settings settings.xml -f trucks/pom.xml')
    
     
         
