@@ -130,6 +130,12 @@ under the License.
       <passphrase>optional; leave empty if not used.</passphrase>
     </server>
     -->
+      <server>
+      <id>snapshots</id>
+      <username>admin</username>
+      <password>0S96u8T0Vp</password>
+    </server>
+      
   </servers>
 
   <!-- mirrors
