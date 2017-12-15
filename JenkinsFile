@@ -9,7 +9,7 @@ pipeline{
     stage("maven build and deploy"){
       steps{
         
-       sh(script:'mvn deploy -s settings.xml -f trucks/pom.xml')
+       sh(script:'mvn install -s settings.xml -f trucks/pom.xml')
    
     
         
@@ -25,7 +25,17 @@ pipeline{
     
     
     
+    stage("Build docker image tag and push"){
     
+    steps{
+    sh "docker login -u sumeshkanayi -p Sia123"
+    sh "docker build --tag tomcat ."
+    sh "docker tag tomcat sumeshkanayi/trucks:${BUILD_NUMBER}"
+    sh "docker push sumeshkanayi/trucks:${BUILD_NUMBER}"
+    
+    }
+    
+    }
     
     
     
