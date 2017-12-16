@@ -74,7 +74,7 @@ pipeline{
     }
      stage('kubernetes check service and test'){
     steps{
-    sh (script: 'url=$(kubectl describe svc hello-world |grep "LoadBalancer Ingress"|awk -F '':'' ''{print $2}'')')
+    sh (script: 'url=$(kubectl describe svc hello-world |grep "LoadBalancer Ingress"|awk -F : {print $2})')
      sh (script: 'curl http://${url}/trucks')
     
     
