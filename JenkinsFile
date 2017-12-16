@@ -47,7 +47,7 @@ pipeline{
     }
       stage('run some tests'){
     steps{
-    sh "curl http://172.31.25.174:8080/trucks"
+    sh "sleep 30;curl http://172.31.25.174:8080/trucks"
     
     
     }
