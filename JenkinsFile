@@ -45,6 +45,14 @@ pipeline{
     }
     
     }
+      stage('run some tests'){
+    steps{
+    sh "curl http://172.31.25.174:8080/trucks"
+    
+    
+    }
+    
+    }
     
     stage('kubernetes start deployment'){
     steps{
