@@ -46,14 +46,24 @@ pipeline{
     
     }
     
-    stage('kubernetes'){
+    stage('kubernetes start deployment'){
     steps{
-    sh "kubectl"
+    sh "kubectl -f apply kubernetes/deployment.yaml"
     
     
     }
     
     }
+    
+     stage('kubernetes deploy service'){
+    steps{
+    sh "kubectl -f apply kubernetes/service.yaml"
+    
+    
+    }
+    
+    }
+    
     
     
     
