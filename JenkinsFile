@@ -39,8 +39,8 @@ pipeline{
     
     stage('run docker app'){
     steps{
-    
-    sh "docker -H tcp://172.31.25.174:2375 run -it -d --name tomcat -p 8080:8080 sumeshkanayi/webapp:${BUILD_NUMBER}"
+    sh "docker -H 172.31.25.174 rm -f tomcat"
+    sh "docker -H 172.31.25.174 run -it -d --name tomcat -p 8080:8080 sumeshkanayi/webapp:${BUILD_NUMBER}"
     
     }
     
