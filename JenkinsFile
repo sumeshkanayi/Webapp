@@ -49,6 +49,18 @@ pipeline{
     
     
     }
+        stage('kube deployment'){
+    steps{
+    
+    sh "kubectl"
+    
+    }
+    
+    }
+    
+    
+    
+    }
   
   
   
