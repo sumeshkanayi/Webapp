@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: hello
-        image: sumeshkanayi/Webapp
+        image: sumeshkanayi/webapp
         ports:
         - containerPort: 8080
