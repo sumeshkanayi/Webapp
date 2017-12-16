@@ -30,8 +30,8 @@ pipeline{
     steps{
     sh "docker login -u sumeshkanayi -p Sia123"
     sh "docker build --tag tomcat ."
-    sh "docker tag tomcat sumeshkanayi/trucks:${BUILD_NUMBER}"
-    sh "docker push sumeshkanayi/trucks:${BUILD_NUMBER}"
+    sh "docker tag tomcat sumeshkanayi/webapp:${BUILD_NUMBER}"
+    sh "docker push sumeshkanayi/webapp:${BUILD_NUMBER}"
     
     }
     
