@@ -74,7 +74,7 @@ pipeline{
     }
      stage('kubernetes check service and test'){
     steps{
-    sh (script: 'kubectl get svc hello-world -o json|jq .status."loadBalancer"."ingress"[0].hostname')
+    sh (script: 'sleep 30 && kubectl get svc hello-world -o json|jq .status."loadBalancer"."ingress"[0].hostname')
    
     
     
