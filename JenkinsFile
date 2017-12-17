@@ -47,7 +47,7 @@ pipeline{
     }
       stage('run some tests'){
     steps{
-    sh "sleep 30;curl http://172.31.25.174:8080/trucks"
+    sh "sleep 30;curl http://172.31.25.174:8080/trucks/"
     
     
     }
@@ -74,7 +74,7 @@ pipeline{
     }
      stage('kubernetes check service and test'){
     steps{
-    sh (script: 'sleep 30 && kubectl get svc hello-world -o json|jq .status."loadBalancer"."ingress"[0].hostname')
+    sh (script: 'sleep 30 && lb=$(kubectl get svc hello-world -o json|jq .status."loadBalancer"."ingress"[0].hostname');echo http://${lb}:8080/trucks)
    
     
     
