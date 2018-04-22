@@ -7,7 +7,7 @@ RUN ln -s /usr/share/tomcat7/bin/catalina.sh /usr/local/bin/catalina.sh
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod 777 /docker-entrypoint.sh
 #ADD trucks/target/trucks.war  /var/lib/tomcat7/webapps/
-ADD https://devops_sumesh.jfrog.io/devops_sumesh/list/snapshot/com/companyname/automobile/trucks/1.0-SNAPSHOT/trucks-1.0-SNAPSHOT.war var/lib/tomcat7/webapps/trucks.war
+ADD trucks/target/trucks.war var/lib/tomcat7/webapps/trucks.war
 #RUN chmod 777 trucks-1.0-20171215.170559-3.war 
 #COPY trucks-1.0-20171215.170559-3.war /var/lib/tomcat7/webapps/trucks.war
 EXPOSE 8080
