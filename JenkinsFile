@@ -37,22 +37,7 @@ pipeline{
     
     }
     
-    stage('run docker app'){
-    steps{
-    sh "docker -H 172.31.25.174 rm -f tomcat"
-    sh "docker -H 172.31.25.174 run -it -d --name tomcat -p 8080:8080 sumeshkanayi/webapp:${BUILD_NUMBER}"
     
-    }
-    
-    }
-      stage('run some tests'){
-    steps{
-    sh "sleep 30;curl http://172.31.25.174:8080/trucks/"
-    
-    
-    }
-    
-    }
     
     stage('kubernetes start deployment'){
     steps{
