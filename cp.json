@@ -1,0 +1,15 @@
+{
+  consul: "consul.rxorp.com:8500",
+  jobs: [
+    {
+      name: "server ",
+      exec: "run_server"
+      restarts: "unlimited"
+    },
+    {
+      name: "client",
+      exec: "run_lcient"
+      
+    }
+  ]
+}
