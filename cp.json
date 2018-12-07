@@ -8,7 +8,7 @@
     },
     {
       name: "client",
-      exec: "run_lcient"
+      exec: "run_client"
       
     }
   ]
